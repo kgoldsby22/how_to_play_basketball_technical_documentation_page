@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                * {
+                box-sizing: border-box;
+                }
+
+                body {
+                font-family: Arial;
+                padding: 10px;
+                background: #f1f1f1;
+                }
+
+                /* Header/Blog Title */
+                .header {
+                padding: 30px;
+                text-align: center;
+                background: white;
+                }
+
+                .header h1 {
+                font-size: 50px;
+                }
+
+                /* Style the top navigation bar */
+                .topnav {
+                overflow: hidden;
+                background-color: #333;
+                }
+
+                /* Style the topnav links */
+                .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+                }
+
+                /* Create two unequal columns that floats next to each other */
+                /* Left column */
+                .leftcolumn {   
+                float: left;
+                width: 25%;
+                }
+
+                /* Right column */
+                .rightcolumn {
+                float: left;
+                width: 75%;
+                background-color: #f1f1f1;
+                padding-left: 20px;
+                }
+
+                /* Fake image */
+                .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+                }
+
+                /* Add a card effect for articles */
+                .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                }
+
+                /* Clear floats after the columns */
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+
+                /* Footer */
+                .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+                }
+
+                /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {   
+                    width: 100%;
+                    padding: 0;
+                    }
+                }
+
+                /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+                @media screen and (max-width: 400px) {
+                .topnav a {
+                    float: none;
+                    width: 100%;
+                    }
+                }
+            </style>
+        </head>
+         <body>
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <nav class="topnav" id="navbar">
+                            <header></header>
+
+                            <a href="#basketball_explained" class="nav-link" >Basketball Explained</a>
+
+                            <a href="#the_handler" class="nav-link">The Handler</a>
+
+                            <a href="#the_sniper" class="nav-link">The Sniper</a>
+
+                            <a href="#ball_delivery" class="nav-link">Ball Delivery</a>
+
+                            <a href="#defender" class="nav-link">Defender</a>
+
+                        </nav>
+                    </div>
+                    
+                </div>
+                <div class="rightcolumn">
+                    <div class="header">
+                        <h1>How to Play Basketball</h1>
+                        
+                    </div>
+                    <main id="main-doc">
+                        <div class="card">
+                            <section class="main-section" id= "basketball_explained">
+                                <header>Basketball Explained</header>
+                                <code></code>
+                                <ol>
+                                    <li>what is basketball</li>
+                                    <li>how it is played</li>
+                                    <li>more than a game</li>
+                                    <li>benefits of basketball</li>
+                                </ol>
+                                <h5>This ssection gives details on how the game is played, Jul 22, 2020</h5>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Some text..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="main-section" id="the_handler">
+                                <header>The Handler</header>
+                                <code></code>
+                                <ol>
+                                    <li>Rules for ball handling</li>
+                                    <li>What makes a great ball handler</li>
+                                    <li>ball handling moves for beginners</li>
+                                    <li>ball handling moves for elite level and higher </li>
+                                </ol>
+                                <h5>Techniques on how to become a great ball handler, JUL 22, 2020</h5>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Some text..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="main-section" id="the_sniper">
+                                <header>The Sniper</header>
+                                <code></code>
+                                <ol>
+                                    <li>Achieving the perfet shot</li>
+                                    <li>Shooting form</li>
+                                    <li>Different Shots for different spots</li>
+                                    <li>Drills to improve shooting</li>
+                                </ol>
+                                <h5> how to shoot like the pros, Jul 22, 2020</h5>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Some text..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="main-section" id="ball_delivery">
+                                <header>Ball Delivery</header>
+                                <code></code>
+                                <ol>
+                                    <li>Its all about delivery</li>
+                                    <li>Drills to enhance passing</li>
+                                    <li>7 types of passing</li>
+                                </ol>
+                                <h5>delivering the perfect pass, jul 22, 2020</h5>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Some text..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="main-section" id="defender">
+                                <header>Defender</header>
+                                <code></code>
+                                <ol>
+                                    <li>WHat about defense?</li>
+                                    <li>defending off the dribble</li>
+                                    <li>defending the shot</li>
+                                   <li>Swiper no swiping</li> 
+                                   <li>defending off the pass</li>
+                                </ol>    
+                               
+                                <h5>Tips and techniques for defending, jul 22, 2020</h5>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Some text..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <div class="footer">
+                    <h2>Footer</h2>
+            </div>
+            
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </body>    
+    </html>
+
+
+
